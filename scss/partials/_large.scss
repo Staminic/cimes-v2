@@ -1,0 +1,58 @@
+// Styles for large sreen width (≥ 992 px)
+
+@include media-breakpoint-up(lg) {
+  .navbar-nav {
+    .item-140 {
+      .nav-link {
+        background-color: $primary;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    .nav-link {
+      font-weight: $font-weight-medium !important;
+    }
+  }
+
+  .navbar-collapse {
+    padding-bottom: 0;
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+
+      &.d-flex {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .navbar-nav {
+        &:first-child {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+
+  .cards {
+    &.cols-4 {
+      .card {
+        width: calc(100% / 4 - 15px);
+      }
+    }
+
+    &.cols-5 {
+      .card {
+        width: calc(100% / 5 - 15px);
+      }
+    }
+  }
+
+  .text-columns_two {
+    column-count: 2;
+    column-gap: 2rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+}

@@ -1,0 +1,69 @@
+// TEMPLATE STYLES
+
+// bootstrap overrides only (taken from variables.scss)
+// hint: write values without !default
+
+// COLORS
+
+$blue:    #2c357f;
+$indigo:  #6610f2;
+$purple:  #60237e;
+$pink:    #e83e8c;
+$red:     #c20012;
+$orange:  #f46b06; // Orange Cimes
+$yellow:  #ffc107;
+$green:   #74ac3e;
+$teal:    #20c997;
+$cyan:    #009cdf;
+$brown:   #996d2a;
+$skyblue: #558ed5;
+
+$primary: $orange;
+$secondary: $black;
+
+$theme-colors: (
+  "primary":  $orange,
+  "red":      $red,
+  "cyan":     $cyan,
+  "blue":     $blue,
+  "green":    $green,
+  "orange":   $orange,
+  "purple":   $purple,
+  "brown":    $brown,
+  "skyblue":  $skyblue
+);
+
+$link-color: $primary;
+$link-hover-color: $primary;
+
+$dropdown-divider-bg: $black;
+
+// SPACES
+
+$navbar-brand-padding-y: ($spacer / 2);
+$spacer-4x: $spacer * 4;
+
+// TYPO
+
+// $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-condensed: 'Roboto Condensed', sans-serif;
+
+$font-size-body: $font-size-base * 1.25;
+
+$font-weight-medium: 500;
+
+$headings-font-family: $font-family-condensed;
+$h1-font-size:  $font-size-base * 2.0;
+$h3-font-size: $h4-font-size;
+$h5-font-size:  $font-size-base * 1.375;
+$h4-font-size: $h5-font-size;
+$headings-font-weight: 700;
+
+$lead-font-weight: 700;
+
+$headings-margin-bottom: $spacer;
+
+// STYLES
+
+$box-shadow: 0 1px 2px rgba(0,0,0,.3);

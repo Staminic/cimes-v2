@@ -1,0 +1,9 @@
+// Styles for extra-large sreen width (≥ 1200 px)
+
+@include media-breakpoint-up(xl) {
+  .navbar-collapse {
+    .container {
+      max-width: 1140px;
+    }
+  }
+}
