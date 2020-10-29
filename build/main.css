@@ -15749,6 +15749,46 @@ body {
   margin: 0;
 }
 
+.team {
+  background-color: #eaeaea;
+  color: #707070;
+}
+.team .hero {
+  position: relative;
+  background-image: url("../images/equipe-cimes.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: #eaeaea;
+  color: #fff;
+  text-align: center;
+}
+.team .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+.team .team-members {
+  display: flex;
+}
+.team .team-members .team-member {
+  flex: 1;
+  margin: 0 1.5rem;
+  text-align: center;
+}
+.team .team-members .team-member .team-member-name {
+  font-weight: 700;
+}
+.team .team-members .team-member p {
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-image: url("../images/main-background-img.png");
@@ -15819,6 +15859,10 @@ blockquote .blockquote-footer::before {
 }
 .line-through span img {
   margin-right: 0.5rem;
+}
+
+.btn-rounded {
+  border-radius: 100px;
 }
 
 .dropdown-divider {
