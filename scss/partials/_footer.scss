@@ -1,0 +1,107 @@
+// FOOTER
+
+.footer {
+  font-size: $font-size-base;
+
+  .nav-link {
+    font-family: $font-family-condensed;
+  }
+
+  h6 {
+    font-family: $font-family-sans-serif;
+  }
+
+  .footer-main {
+    padding: $spacer;
+
+    .nav {
+      margin-right: 4rem;
+    }
+
+    .nav-link {
+      padding: ($spacer / 4) 0;
+      color: $black;
+      white-space: nowrap;
+
+      &:hover,
+      &:focus {
+        color: $black;
+      }
+
+      &::before {
+        content: "\f0c8";
+        margin-right: 0.5rem;
+        color: $primary;
+        font-family: "Font Awesome 5 Free";
+        font-size: $font-size-sm;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .address {
+    font-family: $font-family-condensed;
+  }
+
+  .footer-below {
+    background-color: $black;
+
+    .nav {
+      padding: ($spacer / 4);
+      justify-content: center;
+      @include media-breakpoint-up(lg) {
+        justify-content: flex-start;
+      }
+    }
+
+    .nav-link {
+      padding-left: 0;
+      color: $white;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+
+    .container {
+      position: relative;
+    }
+  }
+}
+
+// Newsletter
+.newsletter-footer {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    flex-direction: column;
+    width: 280px;
+    margin: 0;
+    padding: $spacer;
+    border-top-right-radius: $btn-border-radius * 2;
+    border-top-left-radius: $btn-border-radius * 2;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  color: $white;
+  font-family: $font-family-condensed;
+  font-size: $font-size-sm;
+  text-align: center;
+
+  .btn {
+    margin: ($spacer / 4) $spacer;
+  }
+}

@@ -1,0 +1,18 @@
+// LAYOUT
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  position: relative;
+  flex: 1 0 auto;
+  padding-bottom: 5rem;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.footer {
+  flex: none;
+  background-color: rgba(255, 255, 255, 1);
+}

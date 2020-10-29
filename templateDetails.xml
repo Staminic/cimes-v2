@@ -36,6 +36,7 @@
 	</files>
 
 	<positions>
+		<position>newsletter-topbar</position>
 		<position>navbar</position>
 		<position>breadcrumbs</position>
 		<position>hero-menu</position>
@@ -45,6 +46,7 @@
 		<position>footer</position>
 		<position>footer-above</position>
 		<position>footer-below</position>
+		<position>newsletter-footer</position>
 		<position>debug</position>
 		<position>google-script</position>
 	</positions>

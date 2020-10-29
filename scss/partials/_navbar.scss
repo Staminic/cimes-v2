@@ -1,7 +1,15 @@
 .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $black;
+
   .inner {
-    padding-top: $spacer;
-    padding-bottom: $spacer;
+    padding-top: $spacer / 2;
+    padding-bottom: $spacer / 2;
+    @include media-breakpoint-up(lg) {
+      padding-top: $spacer;
+      padding-bottom: $spacer;
+    }
   }
 }
 
@@ -12,23 +20,67 @@
 
 .navbar-expand-lg {
   .navbar-nav {
+    .nav-item {
+      margin-bottom: $spacer / 2;
+      padding-bottom: $spacer / 2;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: none;
+      }
+    }
+
     .nav-link {
       color: $white;
       font-family: $font-family-condensed;
-      font-size: $font-size-base;
+      font-size: $font-size-body;
+
+      @include media-breakpoint-up(lg) {
+        font-size: $font-size-base;
+      }
 
       &:hover,
       &:focus {
         color: $white;
       }
     }
+
+    &.contact-menu {
+      .nav-item {
+        &:nth-last-child(1),
+        &:nth-last-child(2) {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+#navModules {
+  padding-top: $spacer;
+  padding-bottom: $spacer / 2;
+  @include media-breakpoint-up(lg) {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .nav-link {
   &.contact {
-    margin-right: $navbar-nav-link-padding-x;
-    margin-left: $navbar-nav-link-padding-x;
+    display: inline-block;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      margin-right: $navbar-nav-link-padding-x;
+      margin-left: $navbar-nav-link-padding-x;
+    }
+    padding-right: $navbar-nav-link-padding-x * 2;
+    padding-left: $navbar-nav-link-padding-x * 2;
+    @include media-breakpoint-up(lg) {
+      padding-right: $navbar-nav-link-padding-x;
+      padding-left: $navbar-nav-link-padding-x;
+    }
     background-color: $primary;
     border-radius: $btn-border-radius;
   }
@@ -40,12 +92,20 @@
 
   .logo {
     width: auto;
-    height: 40px;
+    height: 30px;
+    @include media-breakpoint-up(lg) {
+      height: 40px;
+    }
   }
 }
 
 // Lang switcher
 .mod-languages {
+  display: inline-block;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
   margin: 0;
 
   li {
@@ -55,7 +115,10 @@
     justify-content: center;
     align-items: center;
     margin-right: $navbar-nav-link-padding-x !important;
-    margin-left: $navbar-nav-link-padding-x !important;
+    @include media-breakpoint-up(lg) {
+      margin-left: $navbar-nav-link-padding-x !important;
+    }
+    margin-left: 0 !important;
     background-color: $white;
     border-radius: 100%;
   }
@@ -71,7 +134,11 @@
 
 // Search link
 .search-link {
-  display: flex !important;
+  display: inline-flex;
+
+  @include media-breakpoint-up(lg) {
+    display: flex !important;
+  }
   width: $spacer * 2;
   height: $spacer * 2;
   justify-content: center;
@@ -85,4 +152,30 @@
     color: $black;
     font-size: $font-size-sm;
   }
+}
+
+// Newsletter topbar
+.newsletter-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: $spacer / 4;
+  padding-bottom: $spacer / 4;
+  @include media-breakpoint-up(lg) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  background-color: $primary;
+  color: $white;
+  font-family: $font-family-condensed;
+  font-size: $font-size-sm;
+
+  .btn {
+    margin: ($spacer / 4) $spacer;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }

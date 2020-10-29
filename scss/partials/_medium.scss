@@ -1,12 +1,6 @@
 // Styles for medium sreen width (≥ 768 px)
 
 @include media-breakpoint-up(md) {
-  .hero {
-    .container {
-      padding: 75px 90px;
-    }
-  }
-
   .cards {
     &.cols-4 {
       .card {

@@ -115,10 +115,9 @@ foreach($this->item->jcfields as $jcfield)
 
 						</div>
 
-						<div>
-							<?php echo JHtml::_('content.prepare', '{loadposition hero-menu}'); ?>
-						</div>
+						<?php echo JHtml::_('content.prepare', '{loadposition hero-menu}'); ?>
 
+						{module Fil de navigation}
 					<?php endif; ?>
 				</div>
 

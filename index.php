@@ -23,23 +23,24 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
   </head>
 
   <body class="<?php echo $active->alias . ' ' . $pageclass; ?>">
-    <header class="header">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-xl inner">
-          <a class="navbar-brand" href="/">
-            <img class="logo" src="<?php echo $tpath; ?>/images/cimes-logo-blanc.svg" alt="Cimes logo" />
-          </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navModules" aria-controls="navModules" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <jdoc:include type="modules" name="newsletter-topbar" />
+    
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-xl inner">
+        <a class="navbar-brand" href="/">
+          <img class="logo" src="<?php echo $tpath; ?>/images/cimes-logo-blanc.svg" alt="Cimes logo" />
+        </a>
 
-          <div class="collapse navbar-collapse" id="navModules">
-            <jdoc:include type="modules" name="navbar" />
-          </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navModules" aria-controls="navModules" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navModules">
+          <jdoc:include type="modules" name="navbar" />
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <main class="main">
       <jdoc:include type="message" />
@@ -68,9 +69,11 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
       </div>
       <div class="footer-below">
         <div class="container">
+          <jdoc:include type="modules" name="newsletter-footer" />          
           <jdoc:include type="modules" name="footer-below" />
         </div>
       </div>
+
     </footer>
 
     <jdoc:include type="modules" name="debug" />
