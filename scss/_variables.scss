@@ -18,6 +18,15 @@ $cyan: #009cdf;
 $brown: #996d2a;
 $skyblue: #558ed5;
 
+$implicite: #2c2d31;
+$fatigue: #2a4c50;
+$explicite: #b16e0c;
+$cfd: #70272f;
+$multicorps: #63567f;
+$acoustique: #28538e;
+$electromagnetisme: #8e4603;
+$virtual: #c3a02a;
+
 $primary: $orange;
 $secondary: $black;
 
@@ -32,6 +41,14 @@ $theme-colors: (
   "brown": $brown,
   "skyblue": $skyblue,
   "white": $white,
+  "implicite": $implicite,
+  "fatigue": $fatigue,
+  "explicite": $explicite,
+  "cfd": $cfd,
+  "multicorps": $multicorps,
+  "acoustique": $acoustique,
+  "electromagnetisme": $electromagnetisme,
+  "virtual": $virtual,
 );
 
 $link-color: $primary;

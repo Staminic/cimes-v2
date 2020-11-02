@@ -1,4 +1,4 @@
-.key-figures {
+section.key-figures {
   .key-figure {
     flex: 1;
     display: flex;
@@ -27,7 +27,7 @@
   }
 }
 
-.team {
+section.team {
   background-color: #eaeaea;
   color: #707070;
 
@@ -69,6 +69,117 @@
       p {
         margin: 0;
       }
+    }
+  }
+}
+
+section.certifications {
+  .wf-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certification-logo {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+  }
+
+  .certification {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      font-family: $font-family-condensed;
+      text-align: justify;
+    }
+
+    a {
+      color: $black;
+      text-decoration: underline;
+
+      &:hover {
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+section.actualites {
+  a[href*="linkedin.com"] {
+    display: online-block;
+    margin: 0 $spacer;
+    line-height: 0;
+    vertical-align: middle;
+    font-size: 32px;
+  }
+}
+
+section.services-intro {
+  background-color: #f2f2f2;
+  .bloc {
+    flex: 1;
+    margin: 0 $spacer * 2;
+    line-height: $headings-line-height;
+    color: $primary;
+    font-size: $h5-font-size;
+    font-weight: $font-weight-bold;
+    text-align: center;
+  }
+}
+
+section.simulations {
+  .card-text {
+    p {
+      text-align: center;
+      hyphens: none;
+    }
+  }
+}
+
+section.essais {
+  background-color: $black;
+  color: $white;
+
+  .wf-column {
+    font-family: $font-family-condensed;
+  }
+}
+
+section.logiciels {
+  background-color: #f2f2f2;
+
+  .line-through {
+    span {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .wf-column {
+    font-family: $font-family-condensed;
+    font-weight: $font-weight-bold;
+    text-align: center;
+  }
+}
+
+section.optimisation {
+  background-color: $white;
+}
+
+section.iot {
+  background-color: $black;
+  color: $white;
+}
+
+section.r-d {
+  background-color: #f2f2f2;
+
+  .line-through {
+    span {
+      background-color: #f2f2f2;
     }
   }
 }

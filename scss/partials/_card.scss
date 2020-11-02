@@ -1,0 +1,77 @@
+.cards {
+  &.cols-4 {
+    .card {
+      width: 100%;
+    }
+  }
+
+  &.cols-5 {
+    .card {
+      width: 100%;
+    }
+  }
+}
+
+.cards {
+  &.overlay {
+    .card {
+      border: none;
+
+      img {
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .card-img-overlay {
+        padding: 0;
+
+        .card-title {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          padding: 0.75rem;
+          margin: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.card {
+  // box-shadow: $box-shadow;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  > a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.card-title {
+  margin-top: 0;
+}
+
+.card-text {
+  p {
+    text-align: justify;
+    hyphens: auto;
+  }
+}
+
+// .card-text-center {
+//   .card-text {
+//     p {
+//       text-align: center;
+//       hyphens: none;
+//     }
+//   }
+// }
