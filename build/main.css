@@ -16967,6 +16967,85 @@ section.r-d .line-through span {
   background-color: #f2f2f2;
 }
 
+section.outils {
+  background-color: #f2f2f2;
+}
+section.outils .line-through span {
+  background-color: #f2f2f2;
+}
+section.outils [class*=col] {
+  margin: 1rem 0;
+}
+section.outils .card {
+  position: relative;
+  height: 100%;
+  border: none;
+}
+section.outils .card-img-top {
+  height: 160px;
+  padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  object-fit: contain;
+  object-position: top;
+}
+section.outils .card-text p {
+  text-align: center;
+}
+section.outils .badge {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+section.hpc {
+  color: #fff;
+}
+section.hpc .hero {
+  position: relative;
+  background-image: url("../images/serveurs.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: #eaeaea;
+  color: #fff;
+  text-align: center;
+}
+section.hpc .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+section.hpc .hero .container {
+  padding: 3rem;
+}
+section.hpc h2 {
+  margin: 0;
+}
+section.hpc h2 span {
+  font-size: 2em;
+}
+
+section.partenaires [class*=col] {
+  margin: 1rem 0;
+}
+section.partenaires .card {
+  height: 100%;
+}
+section.partenaires .card-img-top {
+  height: 160px;
+  padding: 1.5rem;
+  padding-bottom: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
 .cards.cols-4 .card {
   width: 100%;
 }
