@@ -2314,7 +2314,6 @@ input[type=time].form-control,
 input[type=datetime-local].form-control,
 input[type=month].form-control {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 
@@ -4450,7 +4449,6 @@ input[type=button].btn-block {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 .custom-select:focus {
@@ -4563,7 +4561,6 @@ input[type=button].btn-block {
   padding: 0;
   background-color: transparent;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 .custom-range:focus {
@@ -4619,8 +4616,7 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
@@ -8592,7 +8588,6 @@ button.bg-virtual:focus {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -8612,9 +8607,8 @@ button.bg-virtual:focus {
   z-index: 1030;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -16786,6 +16780,23 @@ body {
   justify-content: center;
 }
 
+.id-542 .item-568,
+.id-542 .item-569,
+.id-542 .item-570,
+.id-542 .item-571 {
+  display: none;
+}
+
+.id-568 .item-553,
+.id-568 .item-554,
+.id-568 .item-555,
+.id-568 .item-556,
+.id-568 .item-557,
+.id-568 .item-561,
+.id-568 .item-568 {
+  display: none;
+}
+
 .breadcrumb {
   justify-content: center;
   margin: 0;
@@ -16946,6 +16957,7 @@ section.logiciels .line-through span {
   background-color: #f2f2f2;
 }
 section.logiciels .wf-column {
+  background-color: #fff;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -17046,6 +17058,64 @@ section.partenaires .card-img-top {
   object-position: center;
 }
 
+section.en-laboratoire {
+  background-color: #f2f2f2;
+}
+section.en-laboratoire .line-through span {
+  background-color: #f2f2f2;
+}
+
+section.home.intro h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+section.home.intro .lead {
+  font-size: 1.5rem;
+}
+section.home.steps {
+  position: relative;
+}
+section.home.steps::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(236deg, #ed6e00 0%, #ed6e00 50%, #f2cf00 100%) 0% 0% no-repeat padding-box;
+  opacity: 0.75;
+}
+section.home.steps .steps {
+  display: flex;
+}
+section.home.steps .step {
+  flex: 1;
+  margin: 0;
+}
+section.home.steps .step h2 {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+section.home.steps .step img {
+  width: 190px;
+  border: 2px solid #fff;
+}
+section.home.steps .arrow {
+  width: 15%;
+  padding-top: 6.5%;
+  align-self: flex-start;
+}
+section.home.logo-slider {
+  background: transparent linear-gradient(90deg, #ffffff 0%, #e5e5e5 50%, #ffffff 100%) 0% 0% no-repeat padding-box;
+}
+section.home.logo-slider h2 {
+  font-size: 1.5rem;
+  color: #707070;
+}
+
 .cards.cols-4 .card {
   width: 100%;
 }
@@ -17092,255 +17162,11 @@ section.partenaires .card-img-top {
           hyphens: auto;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  background-image: url("../images/main-background-img.png");
-  background-position: center;
-  background-repeat: repeat-y;
-  color: #000;
-  font-size: 1rem;
-}
-@media (min-width: 992px) {
-  body {
-    font-size: 1.25rem;
-  }
-}
-
-h2,
-.h2 {
-  margin-top: 4.5rem;
-}
-
-p[style*=justify] {
-  -webkit-hyphens: auto;
-          hyphens: auto;
-}
-
-.lead {
-  font-weight: 400;
-}
-
-blockquote {
-  font-style: italic;
-}
-blockquote .blockquote-footer {
-  font-style: normal;
-  font-weight: 700;
-}
-blockquote .blockquote-footer::before {
-  content: none;
-}
-
-.line-through {
-  position: relative;
-  display: flex;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  justify-content: center;
-  align-items: center;
-}
-.line-through::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 100%;
-  height: 1px;
-  transform: translateY(-50%);
-  background-color: #f46b06;
-}
-.line-through span {
-  display: flex;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  background-color: #fff;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-.line-through span img {
-  margin-right: 0.5rem;
-}
-.line-through.text-white span {
-  background-color: #000;
-}
-.line-through.text-white::after {
-  background-color: #fff;
-}
-
-.btn-rounded {
-  border-radius: 100px;
-}
-
-a[href*="linkedin.com"] {
-  color: #0073b0;
-}
-
-.dropdown-divider {
-  border-width: 2px;
-}
-
-.btn-outline-primary {
-  background-color: #fff;
-}
-
-.full-width {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
-.item-page {
-  overflow-x: hidden;
-}
-
-.btn-outline-black {
-  color: #000;
-  border-color: #000;
-}
-.btn-outline-black:hover {
-  color: #000;
-}
-
-[class*=float] img {
-  margin-top: 0.5rem;
-}
-
-[class*=float] + h2 {
-  margin-top: 0;
-}
-
-.cards {
-  margin: 0 0 0 -15px;
-}
-.cards .card {
-  margin: 0 0 15px 15px;
-  overflow: hidden;
-  color: #fff;
-  font-family: "Roboto Condensed", sans-serif;
-  text-align: center;
-}
-.cards .card h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-}
-
-.hero-slogan {
-  color: #fff;
-  text-align: center;
-}
-
-.embed-responsive {
-  margin-bottom: 1rem;
-}
-
-.medallion {
-  border: 1px solid #fff;
-  border-radius: 100%;
-}
-
-.dropdown-menu {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-}
-
-.nav-child {
-  padding: 0;
-  list-style-type: none;
-}
-.nav-child .nav-item {
-  margin: 0;
-}
-.nav-child .nav-item .nav-link {
-  padding-top: 0;
-  padding-right: 0.5rem;
-  padding-bottom: 0;
-  padding-left: 0.5rem;
-  color: #000;
-}
-.nav-child .nav-item .nav-link:hover, .nav-child .nav-item .nav-link:focus {
-  color: #000;
-}
-.nav-child .nav-item .nav-link span {
-  display: block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #000;
-}
-.nav-child .nav-item:last-child .nav-link span {
-  border: none !important;
-}
-
-.picto__agenda > a > span::before {
-  content: url("../images/calendar-picto-white.svg");
-  display: inline-block;
-  width: 15px;
-  margin-right: 5px;
-}
-
-.element-invisible {
-  display: none;
-}
-
-.btn.finder {
-  background-color: #000;
-  color: #fff;
-}
-
-.hero-menu {
-  justify-content: center;
-}
-.hero-menu .dropdown-divider {
-  display: none;
-}
-.hero-menu .nav-item {
-  margin: 0.5rem;
-}
-.hero-menu .nav-item .nav-link {
-  padding: 0.2rem 1.5rem;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1rem;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 0.25rem;
-}
-.hero-menu .nav-item .nav-link:hover, .hero-menu .nav-item .nav-link:focus {
-  background-color: #fff;
-  color: #000;
-}
-.hero-menu .nav-item.active .nav-link {
-  background-color: #fff;
-  color: #000;
-}
-
-.blog .items-row {
-  margin-bottom: 30px;
-}
-
-.secteurs .category-desc .lead {
-  font-weight: 400;
-}
-
-.desks .card-img-top {
-  width: auto;
-  height: 145px;
-  object-fit: contain;
-}
-
-p.readmore {
-  margin: 0;
-}
-
 .webinaires-et-formations .line-through {
   margin-bottom: 2rem;
 }
 
 #eb-events .card {
-  border: none;
   overflow: hidden;
 }
 #eb-events .card-title {
@@ -17642,6 +17468,249 @@ section.events .card-event-catid-3 .eb-event-date-time {
   border: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("../images/main-background-img.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  color: #000;
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+
+h2,
+.h2 {
+  margin-top: 4.5rem;
+}
+
+p[style*=justify] {
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+
+.lead {
+  font-weight: 400;
+}
+
+blockquote {
+  font-style: italic;
+}
+blockquote .blockquote-footer {
+  font-style: normal;
+  font-weight: 700;
+}
+blockquote .blockquote-footer::before {
+  content: none;
+}
+
+.line-through {
+  position: relative;
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.line-through::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+  background-color: #f46b06;
+}
+.line-through span {
+  display: flex;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.line-through span img {
+  margin-right: 0.5rem;
+}
+.line-through.text-white span {
+  background-color: #000;
+}
+.line-through.text-white::after {
+  background-color: #fff;
+}
+
+.btn-rounded {
+  border-radius: 100px;
+}
+
+a[href*="linkedin.com"] {
+  color: #0073b0;
+}
+
+.dropdown-divider {
+  border-width: 2px;
+}
+
+.btn-outline-primary {
+  background-color: #fff;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.item-page {
+  overflow-x: hidden;
+}
+
+.btn-outline-black {
+  color: #000;
+  border-color: #000;
+}
+.btn-outline-black:hover {
+  color: #000;
+}
+
+[class*=float] img {
+  margin-top: 0.5rem;
+}
+
+[class*=float] + h2 {
+  margin-top: 0;
+}
+
+.cards {
+  margin: 0 0 0 -15px;
+}
+.cards .card {
+  margin: 0 0 15px 15px;
+  overflow: hidden;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+}
+.cards .card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.hero-slogan {
+  color: #fff;
+  text-align: center;
+}
+
+.embed-responsive {
+  margin-bottom: 1rem;
+}
+
+.medallion {
+  border: 1px solid #fff;
+  border-radius: 100%;
+}
+
+.dropdown-menu {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+}
+
+.nav-child {
+  padding: 0;
+  list-style-type: none;
+}
+.nav-child .nav-item {
+  margin: 0;
+}
+.nav-child .nav-item .nav-link {
+  padding-top: 0;
+  padding-right: 0.5rem;
+  padding-bottom: 0;
+  padding-left: 0.5rem;
+  color: #000;
+}
+.nav-child .nav-item .nav-link:hover, .nav-child .nav-item .nav-link:focus {
+  color: #000;
+}
+.nav-child .nav-item .nav-link span {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+}
+.nav-child .nav-item:last-child .nav-link span {
+  border: none !important;
+}
+
+.picto__agenda > a > span::before {
+  content: url("../images/calendar-picto-white.svg");
+  display: inline-block;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.element-invisible {
+  display: none;
+}
+
+.btn.finder {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero-menu {
+  justify-content: center;
+}
+.hero-menu .dropdown-divider {
+  display: none;
+}
+.hero-menu .nav-item {
+  margin: 0.5rem;
+}
+.hero-menu .nav-item .nav-link {
+  padding: 0.2rem 1.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+}
+.hero-menu .nav-item .nav-link:hover, .hero-menu .nav-item .nav-link:focus {
+  background-color: #fff;
+  color: #000;
+}
+.hero-menu .nav-item.active .nav-link {
+  background-color: #fff;
+  color: #000;
+}
+
+.blog .items-row {
+  margin-bottom: 30px;
+}
+
+.secteurs .category-desc .lead {
+  font-weight: 400;
+}
+
+.desks .card-img-top {
+  width: auto;
+  height: 145px;
+  object-fit: contain;
+}
+
+p.readmore {
+  margin: 0;
+}
+
 .isotope_item {
   text-align: center;
 }
@@ -17696,7 +17765,6 @@ section.events .card-event-catid-3 .eb-event-date-time {
 }
 
 .reference .index {
-  position: -webkit-sticky;
   position: sticky;
   top: 1rem;
 }

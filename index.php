@@ -22,7 +22,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
       <?php endif; ?>
   </head>
 
-  <body class="<?php echo $active->alias . ' ' . $pageclass; ?>">
+  <body class="<?php echo $active->alias . ' ' . $pageclass . ' id-' . $active->id; ?>">
 
     <jdoc:include type="modules" name="newsletter-topbar" />
     
