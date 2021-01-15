@@ -415,3 +415,19 @@ section.events {
     border: none;
   }
 }
+
+.evenements {
+  .hero {
+    margin-bottom: 2rem;
+    .container {
+      padding-bottom: 30px;
+      @include media-breakpoint-up(md) {
+        padding-bottom: 90px;
+      }
+    }
+
+    [itemprop="headline"] {
+      margin-bottom: 2rem !important;
+    }
+  }
+}

@@ -81,6 +81,16 @@ foreach($this->item->jcfields as $jcfield)
 							<?php endif; ?>
 						</div>
 					<?php endif; ?>
+					
+					<?php //page d'accueil en français ?>
+					<?php if ($this->item->id =="44") : ?>
+						<div class="hero-slogan">
+							<blockquote>
+								<p>“The best way to predict your future is to <span>create</span> it”</p>
+								<footer>Peter Drucker</footer>
+							</blockquote>
+						</div>
+					<?php endif; ?>							
 
 					<?php if ($params->get('show_title') || $params->get('show_author')) : ?>
 						<div class="page-header ">

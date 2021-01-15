@@ -3,3 +3,32 @@
 //     display: none !important;
 //   }
 // }
+
+.home {
+  .hero {
+    .container {
+      justify-content: flex-start;
+    }
+  }
+
+  .hero-slogan {
+    blockquote {
+      font-size: $font-size-base * 2;
+      font-weight: $font-weight-light;
+      font-style: normal;
+
+      @include media-breakpoint-up(md) {
+        font-size: $font-size-base * 2.5;
+      }
+
+      span {
+        color: $primary;
+      }
+
+      footer {
+        font-size: $h3-font-size;
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+}

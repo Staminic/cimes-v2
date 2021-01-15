@@ -18,10 +18,10 @@ if ($item->anchor_title)
 
 $attributes['class'] = 'nav-link';
 
-// if ($item->anchor_css)
-// {
-// 	$attributes['class'] .= ' ' . $item->anchor_css;
-// }
+if ($item->anchor_css)
+{
+$attributes['class'] .= ' ' . $item->anchor_css;
+}
 
 if ($item->anchor_rel)
 {

@@ -325,11 +325,17 @@ section.home {
 
     .steps {
       display: flex;
+      flex-wrap: wrap;
     }
 
     .step {
       flex: 1;
       margin: 0;
+      padding: $grid-gutter-width;
+
+      @include media-breakpoint-up(md) {
+        padding: 0;
+      }
 
       h2 {
         margin-top: $spacer;
@@ -345,9 +351,14 @@ section.home {
     }
 
     .arrow {
+      display: none;
       width: 15%;
       padding-top: 6.5%;
       align-self: flex-start;
+
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
     }
   }
 
@@ -359,6 +370,53 @@ section.home {
     h2 {
       font-size: $h3-font-size;
       color: #707070;
+    }
+  }
+
+  &.skills {
+    .skills {
+      .skill {
+        margin-bottom: $spacer * 2;
+
+        img {
+          padding: $spacer;
+        }
+      }
+    }
+  }
+
+  &.tailor-made {
+    background-color: transparent;
+    background-position: center 5%, 0% 0%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url("../images/vortex1.svg"),
+      linear-gradient(236deg, #ed6e00 0%, #ed6e00 50%, #f2cf00 100%);
+    background-size: 80%, auto;
+
+    h2 {
+      color: $white;
+      font-size: $font-size-base * 2.5;
+      font-weight: $font-weight-light;
+    }
+
+    .row {
+      justify-content: center;
+    }
+
+    [class*="col"] {
+      padding-right: $grid-gutter-width;
+      padding-left: $grid-gutter-width;
+    }
+
+    img {
+      margin-bottom: $spacer;
+      border: none;
+    }
+
+    h3 {
+      color: $white;
+      text-transform: uppercase;
     }
   }
 }

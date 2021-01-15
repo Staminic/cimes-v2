@@ -16797,6 +16797,18 @@ body {
   display: none;
 }
 
+.blog .hero {
+  margin-bottom: 2em;
+}
+
+.contact .hero {
+  margin-bottom: 2em;
+}
+
+.documentation .hero {
+  margin-bottom: 2em;
+}
+
 .breadcrumb {
   justify-content: center;
   margin: 0;
@@ -17088,10 +17100,17 @@ section.home.steps::before {
 }
 section.home.steps .steps {
   display: flex;
+  flex-wrap: wrap;
 }
 section.home.steps .step {
   flex: 1;
   margin: 0;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  section.home.steps .step {
+    padding: 0;
+  }
 }
 section.home.steps .step h2 {
   margin-top: 1rem;
@@ -17104,9 +17123,15 @@ section.home.steps .step img {
   border: 2px solid #fff;
 }
 section.home.steps .arrow {
+  display: none;
   width: 15%;
   padding-top: 6.5%;
   align-self: flex-start;
+}
+@media (min-width: 768px) {
+  section.home.steps .arrow {
+    display: block;
+  }
 }
 section.home.logo-slider {
   background: transparent linear-gradient(90deg, #ffffff 0%, #e5e5e5 50%, #ffffff 100%) 0% 0% no-repeat padding-box;
@@ -17114,6 +17139,40 @@ section.home.logo-slider {
 section.home.logo-slider h2 {
   font-size: 1.5rem;
   color: #707070;
+}
+section.home.skills .skills .skill {
+  margin-bottom: 2rem;
+}
+section.home.skills .skills .skill img {
+  padding: 1rem;
+}
+section.home.tailor-made {
+  background-color: transparent;
+  background-position: center 5%, 0% 0%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url("../images/vortex1.svg"), linear-gradient(236deg, #ed6e00 0%, #ed6e00 50%, #f2cf00 100%);
+  background-size: 80%, auto;
+}
+section.home.tailor-made h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+section.home.tailor-made .row {
+  justify-content: center;
+}
+section.home.tailor-made [class*=col] {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+section.home.tailor-made img {
+  margin-bottom: 1rem;
+  border: none;
+}
+section.home.tailor-made h3 {
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .cards.cols-4 .card {
@@ -17160,6 +17219,10 @@ section.home.logo-slider h2 {
   text-align: justify;
   -webkit-hyphens: auto;
           hyphens: auto;
+}
+
+.blog .card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .webinaires-et-formations .line-through {
@@ -17466,6 +17529,42 @@ section.events .card-event-catid-3 .eb-event-date-time {
 .card .card-footer {
   background-color: transparent;
   border: none;
+}
+
+.evenements .hero {
+  margin-bottom: 2rem;
+}
+.evenements .hero .container {
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .evenements .hero .container {
+    padding-bottom: 90px;
+  }
+}
+.evenements .hero [itemprop=headline] {
+  margin-bottom: 2rem !important;
+}
+
+.home .hero .container {
+  justify-content: flex-start;
+}
+.home .hero-slogan blockquote {
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: normal;
+}
+@media (min-width: 768px) {
+  .home .hero-slogan blockquote {
+    font-size: 2.5rem;
+  }
+}
+.home .hero-slogan blockquote span {
+  color: #f46b06;
+}
+.home .hero-slogan blockquote footer {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 body {
