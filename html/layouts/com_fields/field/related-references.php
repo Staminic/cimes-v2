@@ -23,10 +23,6 @@ if ($value == '')
     <span><?php echo JText::_('ARTICLE_FIELDS_REFERENCES'); ?></span>
   </h2>
   <div class="related-references-list row">
-    <div class="col-md-6 col-lg-4 d-flex">
-      <div class="item column-1 card-event-catid-2 w-100 mb-4">
-        <?php echo $value; ?>
-      </div>
-    </div>
+    <?php echo $value; ?>
   </div>
 </div>

@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  // margin-bottom: $spacer * 2;
+  margin-bottom: $spacer * 2;
 
   .item-img-fullwidth {
     height: 300px;
@@ -49,6 +49,12 @@
   }
 }
 
+.hero-custom {
+  .hero {
+    margin-bottom: 0;
+  }
+}
+
 .accueil {
   .hero {
     .container {
@@ -77,23 +83,5 @@
   .item-561,
   .item-568 {
     display: none;
-  }
-}
-
-.blog {
-  .hero {
-    margin-bottom: 2em;
-  }
-}
-
-.contact {
-  .hero {
-    margin-bottom: 2em;
-  }
-}
-
-.documentation {
-  .hero {
-    margin-bottom: 2em;
   }
 }

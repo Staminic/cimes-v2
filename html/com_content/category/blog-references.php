@@ -60,6 +60,8 @@ $afterDisplayContent = trim(implode("\n", $results));
 						<?php echo $afterDisplayTitle; ?>
 
 						<?php echo JHtml::_('content.prepare', '{loadposition hero-menu}'); ?>
+
+						{module Fil de navigation}
 					</div>
 				</div>
 			</div>

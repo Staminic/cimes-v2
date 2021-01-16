@@ -100,6 +100,34 @@ JHtml::_('behavior.caption');
 
 						<div>
 							<?php echo JHtml::_('content.prepare', '{loadposition hero-menu}'); ?>
+
+							<div aria-label="Fil de navigation" role="navigation">
+								<ul itemscope="" itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+									<li class="active">
+										<span class="divider icon-location"></span>
+									</li>
+								
+									<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="/" class="pathway"><span itemprop="name">Accueil</span></a>											
+											<span class="divider">/</span>
+											<meta itemprop="position" content="1">
+									</li>
+									<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+										<a itemprop="item" href="/offres-logiciels" class="pathway"><span itemprop="name">Offres logiciels</span></a>
+										<span class="divider">/</span>
+										<meta itemprop="position" content="2">
+									</li>
+									<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+											<span itemprop="name">Formations</span>
+											<span class="divider">/</span>
+											<meta itemprop="position" content="3">
+									</li>
+									<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="active">
+										<span itemprop="name"><?php echo $this->escape($this->item->title); ?></span>
+										<meta itemprop="position" content="4">
+									</li>
+								</ul>
+							</div>
 						</div>
 
 					<?php endif; ?>

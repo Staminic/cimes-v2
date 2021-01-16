@@ -16729,6 +16729,7 @@ body {
 
 .hero {
   position: relative;
+  margin-bottom: 2rem;
 }
 .hero .item-img-fullwidth {
   height: 300px;
@@ -16776,6 +16777,10 @@ body {
   margin-top: 3rem !important;
 }
 
+.hero-custom .hero {
+  margin-bottom: 0;
+}
+
 .accueil .hero .container {
   justify-content: center;
 }
@@ -16795,18 +16800,6 @@ body {
 .id-568 .item-561,
 .id-568 .item-568 {
   display: none;
-}
-
-.blog .hero {
-  margin-bottom: 2em;
-}
-
-.contact .hero {
-  margin-bottom: 2em;
-}
-
-.documentation .hero {
-  margin-bottom: 2em;
 }
 
 .breadcrumb {
@@ -16865,7 +16858,7 @@ section.team {
 }
 section.team .hero {
   position: relative;
-  background-image: url("../images/equipe-cimes.jpg");
+  background-image: url("../images/ambiance-equipe.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17144,7 +17137,7 @@ section.home.skills .skills .skill {
   margin-bottom: 2rem;
 }
 section.home.skills .skills .skill img {
-  padding: 1rem;
+  padding: 2rem;
 }
 section.home.tailor-made {
   background-color: transparent;
@@ -17221,7 +17214,8 @@ section.home.tailor-made h3 {
           hyphens: auto;
 }
 
-.blog .card {
+.blog .card,
+.related-references-list .card {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -17526,6 +17520,9 @@ section.events .card-event-catid-3 .eb-event-date-time {
 .card.training .card-title {
   color: #000;
 }
+.card.training .badge {
+  display: none;
+}
 .card .card-footer {
   background-color: transparent;
   border: none;
@@ -17544,6 +17541,10 @@ section.events .card-event-catid-3 .eb-event-date-time {
 }
 .evenements .hero [itemprop=headline] {
   margin-bottom: 2rem !important;
+}
+
+.formations .blog .item {
+  display: flex;
 }
 
 .home .hero .container {

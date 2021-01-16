@@ -408,6 +408,10 @@ section.events {
     .card-title {
       color: $black;
     }
+
+    .badge {
+      display: none;
+    }
   }
 
   .card-footer {
@@ -428,6 +432,14 @@ section.events {
 
     [itemprop="headline"] {
       margin-bottom: 2rem !important;
+    }
+  }
+}
+
+.formations {
+  .blog {
+    .item {
+      display: flex;
     }
   }
 }

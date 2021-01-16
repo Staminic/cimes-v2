@@ -33,7 +33,7 @@ section.team {
 
   .hero {
     position: relative;
-    background-image: url("../images/equipe-cimes.jpg");
+    background-image: url("../images/ambiance-equipe.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -379,7 +379,7 @@ section.home {
         margin-bottom: $spacer * 2;
 
         img {
-          padding: $spacer;
+          padding: $spacer * 2;
         }
       }
     }
