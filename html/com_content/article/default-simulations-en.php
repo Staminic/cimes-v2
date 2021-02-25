@@ -133,17 +133,17 @@ foreach($this->item->jcfields as $jcfield)
 								</li>
 							
 								<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-										<a itemprop="item" href="/" class="pathway"><span itemprop="name">Accueil</span></a>											
+										<a itemprop="item" href="/" class="pathway"><span itemprop="name">Home</span></a>											
 										<span class="divider">/</span>
 										<meta itemprop="position" content="1">
 								</li>
 								<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-									<a itemprop="item" href="/services-new" class="pathway"><span itemprop="name">Services</span></a>
+									<a itemprop="item" href="en/our-services" class="pathway"><span itemprop="name">Services</span></a>
 									<span class="divider">/</span>
 									<meta itemprop="position" content="2">
 								</li>
 								<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
-										<span itemprop="name">Simulations numériques et calculs multiphysiques</span>
+										<span itemprop="name">Numerical simulations and multiphysical computations</span>
 										<span class="divider">/</span>
 										<meta itemprop="position" content="3">
 								</li>
@@ -153,7 +153,6 @@ foreach($this->item->jcfields as $jcfield)
 								</li>
 							</ul>
 						</div>
-
 					<?php endif; ?>
 				</div>
 

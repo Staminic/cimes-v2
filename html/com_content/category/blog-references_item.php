@@ -99,7 +99,7 @@ $assocParam = (JLanguageAssociations::isEnabled() && $params->get('show_associat
 			<?php echo JLayoutHelper::render('joomla.content.readmore', array('item' => $this->item, 'params' => $params, 'link' => $link)); ?>
 		<?php endif; ?>
 
-		<span class="btn btn-outline-primary">Lire l'article</span>
+		<span class="btn btn-outline-primary"><?php echo JText::_('COM_CONTENT_BLOG_REFERENCES_READ_MORE'); ?></span>
 	</div>
 
 </a>

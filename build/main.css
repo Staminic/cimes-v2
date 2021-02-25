@@ -16802,6 +16802,23 @@ body {
   display: none;
 }
 
+.id-227 .item-620,
+.id-227 .item-621,
+.id-227 .item-622,
+.id-227 .item-623 {
+  display: none;
+}
+
+.id-620 .item-604,
+.id-620 .item-605,
+.id-620 .item-606,
+.id-620 .item-607,
+.id-620 .item-232,
+.id-620 .item-608,
+.id-620 .item-620 {
+  display: none;
+}
+
 .breadcrumb {
   justify-content: center;
   margin: 0;
