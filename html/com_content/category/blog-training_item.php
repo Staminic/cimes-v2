@@ -108,7 +108,7 @@ foreach($this->item->jcfields as $jcfield)
 			<?php echo JLayoutHelper::render('joomla.content.readmore', array('item' => $this->item, 'params' => $params, 'link' => $link)); ?>
 		<?php endif; ?>
 
-		<span class="btn btn-outline-primary">Détails et inscription</span>
+		<span class="btn btn-outline-primary"><?php echo JText::_('COM_CONTENT_BLOG_TRAINING_READ_MORE'); ?></span>
 	</div>
 
 </a>
