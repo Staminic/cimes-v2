@@ -32,3 +32,11 @@
     }
   }
 }
+
+.n2-ss-slider {
+  [data-mode="fit"] {
+    .n2-ss-slide-background-image {
+      background-size: 90% !important;
+    }
+  }
+}

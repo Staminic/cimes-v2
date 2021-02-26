@@ -17585,6 +17585,10 @@ section.events .card-event-catid-3 .eb-event-date-time {
   font-weight: 700;
 }
 
+.n2-ss-slider [data-mode=fit] .n2-ss-slide-background-image {
+  background-size: 90% !important;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
