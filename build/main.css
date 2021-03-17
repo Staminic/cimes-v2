@@ -17589,6 +17589,15 @@ section.events .card-event-catid-3 .eb-event-date-time {
   background-size: 90% !important;
 }
 
+.realisations .item-page .hero,
+.projects .item-page .hero {
+  margin-bottom: 0;
+}
+.realisations .item-page .striped,
+.projects .item-page .striped {
+  background-color: #f2f2f2;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
